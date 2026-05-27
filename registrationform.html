@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1.0"/
+        <title>Student registration form</title>
+        <style>
+            body{
+                font-family:Arial, sans-serif;
+                background-color:#f4f4f4;
+            }
+            .container{
+                width: 80%;
+                margin: auto;
+                background: 20px;
+                        }
+                        h1{
+                            text-align: center;
+                            color: darkblue;
+                        }
+                        label{
+                            font-weight:bold;
+                        }
+                        input,
+                        select,
+                        textarea{
+                            width: 100%;
+                            padding:10px;
+                            margin-top:5px;
+                            margin-bottom: 15px;
+                            barder: 1px solid #999;
+                            border-radius: 3px;
+                    }
+                    textarea{
+                        height: 80px;
+
+                    }
+                    .gender{
+                        height:auto;
+                    }
+                    .gender{
+                        width:auto;
+                    }
+                    button{
+                        background-color: darkblue;
+                        color: white;
+                        border:none;
+                        padding: 10px 20px;
+                        corsor:pointer;
+                    }
+                    button:hover{
+                        background-color: navy;
+                    }
+                    table{
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin-top: 20px;
+                    }
+                    table,th,td{
+                        border: 1px solid black;
+
+                    }
+                    th{
+                        background-color: darkblue;
+                        color: white;
+                        padding: 10px;
+
+                    }
+                    td{
+                        text-align: center;
+                        padding: 10px;
+                    }
+        </style>
+    </head>
+</html>
+
+<body>
+    <div class="container">
+        <h1>Student Registration Form</h1>
+        <form >
+            <label for="name">Name</label>
+            <input type="text" placeholder="Enter your name" required/>
+
+            <label for="email">Email</label>
+            <input type="email"  placeholder="Enter your email" required/>
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter password" required/>
+            <label for ="phone">Phone Number</label>
+            <input type="tel" placeholder="Enter phone number" required/>
+            <label >Date of Birth</label>
+            <input type="date" required/>  
+            <label>Select course</label>
+            <select>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+            <option>React</option>
+            </select>
+            <label> Gender</label>
+            <br><br>
+            <input type="radio" name="gender" class="gender">Male
+            <input type="radio" name="gender" class="gender">Female
+            <br><br>
+            <label for="address">Address</label>
+            <textarea placeholder="address" required></textarea>
+            <button type="submit">Register</button>
+        </form>
+        <h1>Student Data Table</h1>
+        <table>
+            <Tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>City</th>
+            </Tr>
+            <Tr>
+                <td>1</td>
+                <td>Rahul</td>
+                <td>HTML</td>
+                <td>Mumbai</td>
+            </Tr>
+
+            <tr>
+                <td>2</td>
+                <td>sneha</td>
+                <td>CSS</td>
+                <td>Pune</td>
+            </tr>
+
+
+                <tr>
+                    <td>3</td>
+                    <td>Rohit</td>
+                    <td>JavaScript</td>
+                    <td>Nashik</td>
+                </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Priya</td>
+                        <td>Python</td>
+                        <td>Nagpur</td>
+                    </tr>
+
+        </table>
+
+    </div>
+</body>
